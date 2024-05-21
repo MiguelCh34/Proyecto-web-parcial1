@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="Calendario.css">
+    <script src="https://kit.fontawesome.com/0dbec64aa3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bienvenida-container">
+        <div class="bienvenida">
+            <div class="Calendario">
+                <h1>Calendario</h1>
+            </div>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-bell" onclick="toggleMenu()"></i>
+            <ul class="menu-lista" id="menuLista">
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <a href="../Notificaciones/Notificacion.html">Ver completo</a>
+            </ul>
+        </div>
+        <div class="Icono2" id="icono2">
+            <i class="fa-solid fa-bars" onclick="toggleTable('menuLusta2')"></i>
+            <ul class="menu-listado" id="menuLista2">
+                <li><a href="../Perfil/Perfil.html">Perfil</a></li>
+                <a href="../Inicio_sesion/Login.html">Cerrar sesion</a>
+        </div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="../Pagina_principal/Pagina_principal.html">Principal</a></li>
+            <li><a href="../Calendario/Calendario.html">Calendario</a></li>
+            <li><a href="../Registro-asistencia/Asistencia.html">Registrar asistencia</a></li>
+            <li><a href="../Atrasos/Atrasos.html">Atrasos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container_calendar">
+        <div class="header_calendar">
+            <h1 id="text_day">00</h1>
+            <h5 id="text_month">Null</h5>
+        </div>
+        <div class="body_calendar">
+            <div class="container_details">
+                <div class="detail_1">
+                    <div class="detail">
+                        <div class="circle">
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="circle">
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_2">
+                    <div class="detail">
+                        <div class="circle">
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="circle">
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_change_month">
+                <button id="last_month">&lt;</button>
+                <div>
+                    <span id="text_month_02">Null</span>
+                    <span id="text_year">0000</span>
+                </div>
+                <button id="next_month">&gt;</button>
+            </div>
+            <div class="container_weedays">
+                <span class="week_days_item">DOM</span>
+                <span class="week_days_item">LUN</span>
+                <span class="week_days_item">MAR</span>
+                <span class="week_days_item">MÍE</span>
+                <span class="week_days_item">JUE</span>
+                <span class="week_days_item">VIE</span>
+                <span class="week_days_item">SÁB</span>
+            </div>
+            <div class="container_days">
+                <span class="week_days_item item_day"></span>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="calendario_script.js"></script>
+    
+    <footer>
+        <p>Para más información o una demostración en vivo, no dudes en <a href="">contactarnos.</a></p>
+    </footer>
+
+    
+</body>
+</html>

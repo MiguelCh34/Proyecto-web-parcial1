@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="Notificacion.css">
+    <script src="https://kit.fontawesome.com/0dbec64aa3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bienvenida-container">
+        <div class="bienvenida">
+            <h1>Notificaciones</h1>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-bell" onclick="toggleMenu()"></i>
+            <ul class="menu-lista" id="menuLista">
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <a href="#">Ver completo</a>
+            </ul>
+        </div>
+        <div class="Icono2" id="icono2">
+            <i class="fa-solid fa-bars" onclick="toggleTable('menuLusta2')"></i>
+            <ul class="menu-listado" id="menuLista2">
+                <li><a href="../Perfil/Perfil.html">Perfil</a></li>
+                <a href="../Inicio_sesion/Login.html">Cerrar sesion</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../Pagina_principal/Pagina_principal.html">Principal</a></li>
+            <li><a href="../Calendario/Calendario.html">Calendario</a></li>
+            <li><a href="../Registro-asistencia/Asistencia.html">Registrar asistencia</a></li>
+            <li><a href="../Atrasos/Atrasos.html">Atrasos</a></li>
+        </ul>
+    </nav>
+    <div class="tabla-notificaciones-container">
+        <h2>Notificaciones</h2>
+        <table class="tabla-notificaciones">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Mensaje</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2024-05-19</td>
+                    <td>Actualización del sistema programada para mañana.</td>
+                    <td class="estado-leido">Leído</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-05-18</td>
+                    <td>Nueva política de privacidad actualizada.</td>
+                    <td class="estado-no-leido">No leído</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2024-05-17</td>
+                    <td>Mantenimiento del servidor completado.</td>
+                    <td class="estado-leido">Leído</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2024-05-16</td>
+                    <td>Recordatorio: Reunión de equipo el viernes.</td>
+                    <td class="estado-no-leido">No leído</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Para más información o una demostración en vivo, no dudes en <a href="">contactarnos.</a></p>
+    </footer>
+
+    <script src="Notificacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="Atrasos.css">
+    <script src="https://kit.fontawesome.com/0dbec64aa3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bienvenida-container">
+        <div class="bienvenida">
+            <h1>Atrasos</h1>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-bell" onclick="toggleMenu('menuLista1')"></i>
+            <ul class="menu-lista" id="menuLista1">
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <li><a href="#">Notificacion nueva</a></li>
+                <a href="../Notificaciones/Notificacion.html">Ver completo</a>
+            </ul>
+        </div>
+        <div class="Icono2" id="icono2">
+            <i class="fa-solid fa-bars" onclick="toggleTable('menuLusta2')"></i>
+            <ul class="menu-listado" id="menuLista2">
+                <li><a href="../Perfil/Perfil.html">Perfil</a></li>
+                <a href="../Inicio_sesion/Login.html">Cerrar sesion</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../Pagina_principal/Pagina_principal.html">Principal</a></li>
+            <li><a href="../Calendario/Calendario.html">Calendario</a></li>
+            <li><a href="../Registro-asistencia/Asistencia.html">Registrar asistencia</a></li>
+            <li><a href="../Atrasos/Atrasos.html">Atrasos</a></li>
+        </ul>
+    </nav>
+    <div class="table-container">
+        <h2>Tabla de Atrasos</h2>
+        <table class="atrasos-table">
+            <thead>
+                <tr>
+                    <th>Nombre del Empleado</th>
+                    <th>Fecha del Atraso</th>
+                    <th>Motivo</th>
+                    <th>Duración del Atraso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miguel Chiriboga</td>
+                    <td>2024-05-15</td>
+                    <td>Sin justificar</td>
+                    <td>15 minutos</td>
+                </tr>
+                <tr>
+                    <td>Miguel Chiriboga</td>
+                    <td>2024-05-16</td>
+                    <td>Sin justificar</td>
+                    <td>30 minutos</td>
+                </tr>
+                <tr>
+                    <td>Miguel Chiriboga</td>
+                    <td>2024-05-17</td>
+                    <td>Médico</td>
+                    <td>45 minutos</td>
+                </tr>
+                <tr>
+                    <td>Miguel Chiriboga</td>
+                    <td>2024-05-18</td>
+                    <td>Sin justificar</td>
+                    <td>20 minutos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Para más información o una demostración en vivo, no dudes en <a href="">contactarnos.</a></p>
+    </footer>
+
+    <script src="Atrasos.js"></script>
+</body>
+</html>
